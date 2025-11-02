@@ -103,6 +103,18 @@
 
   .gallery { display: flex; overflow-x: auto; gap: 1rem; padding: 1rem 0; scroll-snap-type: x mandatory; }
   .gallery img { flex: 0 0 auto; width: 280px; height: 200px; border-radius: 10px; object-fit: cover; scroll-snap-align: start; }
+  .training-video {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.training-video video {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+  
 
   form { display: grid; gap: .7rem; max-width: 500px; margin: auto; }
   input, textarea { padding: .6rem; border: 1px solid #ccc; border-radius: 5px; }
@@ -164,7 +176,16 @@
 <section id="training">
   <h2 class="section-title">Training Gallery</h2>
   <p>At BJM, we provide comprehensive, hands-on training programs designed for aspiring professionals in both instrumentation and solar energy installation. Our courses cover a wide range of practical skills, from advanced instrumentation techniques to solar panel installation, inverter setup, battery management, and energy auditing. Trainees gain real-world experience, industry knowledge, and technical expertise that prepare them to excel in modern technical and renewable energy fields. Whether you’re looking to enhance your career or start a new venture in energy solutions, BJM Training equips you with the tools and confidence to succeed.</p> <br>
-  <p> <h2>Scroll through our recent training sessions.</h2></p>
+  <p> <h2>Scroll through our recent training sessions.</h2>
+  <!-- 🎥 Training Video -->
+<div class="training-video">
+  <video controls poster="./images/trainingsection.jpg.jpg">
+    <source src="./videos/trainingvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+  </p>
   <div class="gallery">
     <img src="./images/trainingsection.jpg.jpg" alt="1st" >
     <img src="./images/traininsection2.jpg.jpg" alt="2nd">
@@ -225,3 +246,4 @@ function sendQuote(e) {
 
 </body>
 </html>
+
